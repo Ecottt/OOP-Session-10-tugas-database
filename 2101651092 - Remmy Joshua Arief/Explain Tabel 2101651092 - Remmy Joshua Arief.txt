@@ -1,0 +1,44 @@
+[Optional] Introduction to Database Assignment
+OOP LEC LA05 (Dosen Anderies)
+
+Buatlah Sebuah database dengan tabel-tabel yang saling berelasi :
+
+Minimal 3 Tabel
+
+Kumpulkan file sqlnya dan video atau teks (pilih salah satu) berisi penjelasan mengenai tabel2 tersebut.
+
+Nama : Remmy Joshua Arief
+NIM : 2101651092
+
+Penjelasan database:
+Tabel-tabel berikut ini adalah tabel yang berisi pembentukan tim esports terdiri dari coach beserta pemain (5 orang)
+
+Table Coach :
+Tabel ini memiliki atribut/kolom berikut = coach_id,coach_name,coach_age,coach_contact
+coach_id untuk menyimpan data ID/Kode unik (selalu dimulai dengan "CH") seorang coach(PRIMARY KEY).
+coach_name untuk menyimpan data nama coach.
+coach_age untuk menyimpan data umur coach.
+coach_contact untuk menyimpan data nomor telepon coach.
+
+Tabel team:
+Tabel ini memiliki atribut/kolom berikut = coach_id,team_name,date_registered,team_rating.
+coach_id untuk menyimpan data coach yang mengelola tim tersebut (FOREIGN KEY).
+team_name untuk menyimpan data nama team (PRIMARY KEY).
+date_registered untuk menyimpan data tanggal pendaftaran team ke pihak management.
+team_rating untuk menyimpan data penilaian team.
+
+Tabel player:
+
+Tabel ini memiliki atribut/kolom berikut = team_name, player_id, player_name. player_age, dan player_pos.
+
+team_name untuk menyimpan data player yang sedang membela "team" (FOREIGN KEY). 
+
+player_id untuk menyimpan data ID/Kode unik (dimulai sesuai dengan posisi player,
+contoh: SoftSupport = SS, HardSupport = HS, OffLane = OL, MidLane = ML, Carry = CY ) seorang player (PRIMARY KEY).
+
+player_name untuk menyimpan data nama player
+player_age untuk menyimpan data umur player
+player_pos untuk menyimpan data posisi player
+
+
+
